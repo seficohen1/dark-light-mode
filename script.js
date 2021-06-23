@@ -6,6 +6,8 @@ const nav = document.getElementById("nav");
 const toggleIcon = document.getElementById("toggle-icon");
 const textBox = document.getElementById("text-box");
 
+
+
 function setImageMode(color) {
   img1.src = `img/undraw_Choose_${color}.png`;
   img2.src = `img/undraw_Gifts_${color}.png`;
@@ -40,6 +42,8 @@ function switchModeHandler(event) {
 
 switchBtn.addEventListener("change", switchModeHandler);
 
+
+//  Setting and getting Theme selected by user using local storage
 const currentTheme = localStorage.getItem("theme");
 
 if (currentTheme) {
